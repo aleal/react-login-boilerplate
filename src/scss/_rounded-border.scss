@@ -1,0 +1,14 @@
+@mixin div-border($radius, $width, $style, $color) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+            border-color: $color;
+            border-width: $width;
+            border-style: $style; 
+}
+
+div {
+    text-align: center;
+    @include div-border(10px,2px,groove,tomato);
+}
